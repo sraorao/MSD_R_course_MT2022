@@ -1,5 +1,5 @@
 ###R for biologists
-##Irina & Rao, 26/01/2022
+##Irina & Rao, 18/10/2022
 
 #### LOAD and PREPARE data ####
 # We will load and subset migration and morphology data as in session 1
@@ -45,7 +45,7 @@ migmorph_cl1 = migmorph[migmorph$cluster == "1", ]
 migmorph_cl6 = migmorph[migmorph$cluster == "6", ]
 t.test(migmorph_cl1$elongatedness, migmorph_cl6$elongatedness)
 
-# Q: Perform a T test with Welch correction
+# Q: Perform a T test without Welch correction
 # hint: look up the help for t.test()
 
 
